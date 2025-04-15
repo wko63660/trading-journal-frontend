@@ -14,7 +14,7 @@ api.interceptors.request.use(
             config.headers.Authorization = `Bearer ${token}`;
         }
         return config;
-    }
+    },
     (error) => {
         return Promise.reject(error);
     }
@@ -23,7 +23,7 @@ api.interceptors.request.use(
 api.interceptors.response.use(
     (response) => {
         return response;
-    }
+    },
     (error) => {
         if (error.response.status === 401) {
             console.warn("Unauthorized access - redirecting to login");

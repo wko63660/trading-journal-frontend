@@ -19,7 +19,7 @@ export default function LoginPage() {
         password,
       })
       const token = response.data.accessToken
-      login(token)
+      login(token, response.data.username, response.data.email)
 
     } catch (err) {
       setError("Wrong email or password. Try again.")

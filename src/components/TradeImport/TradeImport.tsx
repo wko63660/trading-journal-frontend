@@ -10,10 +10,11 @@ interface ParsedTrade {
   price: number,
   currency: string,
   fee: number,
-  date: string
-  entryTime: string,
-  exitTime: string,
-  dateTime: string,
+  // date: string
+  // entryTime: string,
+  // exitTime: string,
+  entryDateTime: string,
+  exitDateTime?: string,
   side: "LONG" | "SHORT"
   action: "BUYTOOPEN" | "SELLTOOPEN" | "BUYTOCLOSE" | "SELLTOCLOSE"
   qty: number,
@@ -76,10 +77,11 @@ export default function TradeImport() {
           price: price,
           currency: currency,
           fee: fee,
-          date: date,
-          dateTime: fullDateTime,
-          entryTime: rawStatus === "O" ? rawTime : "",
-          exitTime: rawStatus === "C" ? rawTime : "",
+          // date: date,
+          entryDateTime: rawStatus === "O" ? fullDateTime : "",
+          exitDateTime: rawStatus === "C" ? fullDateTime : "",
+          // entryTime: rawStatus === "O" ? rawTime : "",
+          // exitTime: rawStatus === "C" ? rawTime : "",
           side : side,
           action: action as ParsedTrade["action"],
           qty : qty,

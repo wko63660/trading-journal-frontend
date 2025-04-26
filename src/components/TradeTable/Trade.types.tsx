@@ -1,10 +1,11 @@
 export interface Trade {
     id: number
     symbol: string
-    entryDate: string
-    exitDate?: string
+    entryDateTime: string
+    exitDateTime?: string
     side: string
     quantity: number
+    volume: number
     entryPrice: number
     exitPrice?: number
     pnl?: number

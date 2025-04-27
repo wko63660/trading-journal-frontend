@@ -24,5 +24,5 @@ This is the frontend for the Trading Journal app — a responsive web interface 
 ![image](https://github.com/user-attachments/assets/1d5d963a-34fa-4107-8255-4b7f98e46251)
 User can download the trades record from ib and improt the trades through the add new trades page, or add trades manually.
 
-![image](https://github.com/user-attachments/assets/7fdc57a6-9540-4de0-9afe-ad8b445f6d72)
+![image](https://github.com/user-attachments/assets/f3df495f-0a7a-4062-8c67-0052f025bcf3)
 Once TLG files are imported, the trades would be shown the My Trades page. 
